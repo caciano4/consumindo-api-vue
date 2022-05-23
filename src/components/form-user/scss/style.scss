@@ -4,13 +4,16 @@
   height: 55px;
   border-color: var(--light-color);
   background: transparent;
+  &:focus {
+    color: #212529;
+    background-color: var(--white-color);
+    border-color: var(--black-color) !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
 }
-.form-control:focus {
-  color: #212529;
-  background-color: var(--white-color);
-  border-color: var(--black-color) !important;
-  outline: 0;
-  box-shadow: none !important;
+.form-control {
+  padding: 0 !important;
 }
 .btn-register-user {
   height: 55px;

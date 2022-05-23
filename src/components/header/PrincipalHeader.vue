@@ -1,8 +1,8 @@
 <template>
   <b-row id="principal-header">
     <b-col
-      lg="6 mx-auto mt-header-custom"
-      class="d-flex justify-content-between p-0"
+      lg="6 mx-auto mt-header-custom" 
+      class="d-flex justify-content-between p-0 col-10 col-sm-9 col-md-8 col-lg-6"
     >
       <h1 class="user-title">Usuários</h1>
       <button @click="toggleForm" :class="btnStyle">

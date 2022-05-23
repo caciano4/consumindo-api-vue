@@ -13,6 +13,10 @@
     color: var(--black-color);
   }
 
+  .form-control{
+    padding: 0 !important;
+  }
+
   .btn-register {
     width: 185px;
     height: 55px;
@@ -92,4 +96,16 @@
   .mt-header-custom {
     margin-top: 56px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+ 
+#principal-header {
+  .user-title {
+    font-size: 35px !important;
+  }
+  .btn-register, .btn-cancel{
+    width: 140px;
+  }
+}
 }

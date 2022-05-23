@@ -7,11 +7,11 @@
         :key="index"
       >
         <b-col
-          lg="6 m-auto"
-          class="card-user d-flex justify-content-between rounded"
+          lg="6" md="8" sm="9"
+          class="m-auto card-user d-flex justify-content-between rounded col-10 col-sm-9 col-md-8 col-lg-6"
         >
-          <b-col lg="8" class="align-self-center d-flex">
-            <b-img :src="user.avatar" lg="mx-4" sm="mx-2" md="mx-2" class="rounded  img-size" fluid-img />
+          <b-col cols="8" class="align-self-center d-flex">
+            <b-img :src="user.avatar" class="mx-4 rounded  img-size" fluid-img />
             <b-col>
               <h3 class="info-user">#{{ user.id }}</h3>
               <h2 class="name-user">
@@ -20,7 +20,7 @@
               <h3 class="info-user">{{ user.email }}</h3>
             </b-col>
           </b-col>
-          <b-col id="icons" lg="4" class="d-flex justify-content-end align-self-center">
+          <b-col id="icons" cols="4" class="d-flex justify-content-end align-self-center">
             <edit-icon
               @click="maintenenceRoute"
               size="22"
@@ -40,7 +40,7 @@
         </b-col>
       </b-row>
     </div>
-    <b-col lg="6 m-auto" class="mt-4">
+    <b-col cols="6" class="mx-auto mt-4">
       <b-pagination
         class="d-flex justify-content-center"
         v-model="currentPage"
