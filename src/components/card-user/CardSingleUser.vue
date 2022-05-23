@@ -88,39 +88,6 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-@import "../../styles/global.css";
-#card-single-user {
-  .field {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-
-    letter-spacing: 0.2px;
-    color: var(--black-color);
-  }
-
-  .img-size {
-    width: 120px;
-    height: 120px;
-  }
-
-  label,
-  p {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    letter-spacing: 0.2px;
-    margin-bottom: 5px;
-    color: var(--gray-color);
-  }
-}
+@import './scss/style.scss';
 </style>

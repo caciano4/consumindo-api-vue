@@ -10,8 +10,22 @@
   --black-color: #000000;
   --gray-color: #797979;
   --light-color: #e5e5e5;
+  --btn-hover-cancel: #d3d3d3;
 }
 
 #app {
   background-color: var(--color-white);
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box !important;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
 }

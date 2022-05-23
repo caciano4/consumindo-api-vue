@@ -1,0 +1,113 @@
+@import "../../styles/global.css";
+#card-single-user {
+  .field {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.2px;
+    color: var(--black-color);
+  }
+
+  .img-size {
+    width: 120px;
+    height: 120px;
+  }
+
+  label,
+  p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 0.2px;
+    margin-bottom: 5px;
+    color: var(--gray-color);
+  }
+}
+
+#card-user {
+  .card-user {
+    background: var(--bg-card);
+    height: 120px;
+
+    &::before {
+      content: ".";
+      width: 4px;
+      height: 20px;
+      position: relative;
+      left: -2.1%;
+      margin-top: 20px;
+
+      background: var(--black-color);
+    }
+  }
+
+  
+  .mr-icon-eye {
+    margin-right: 30px;
+  }
+  .mh-custom {
+    min-height: 70vh;
+  }
+  .info-user {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+
+    color: var(--gray-color);
+  }
+  
+  #icons{
+    .icon-color {
+      color: var(--icon-color);
+    }
+    .icon-edit:hover {
+      color: var(--edit-color);
+      cursor: pointer;
+    }
+    .icon-delete:hover {
+      color: var(--delete-color);
+      cursor: pointer;
+    }
+    .icon-show:hover {
+      color: var(--show-color);
+      cursor: pointer;
+    }
+  }
+
+  .name-user {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+
+    color: var(--black-color);
+  }
+  .img-size {
+    width: 80px;
+    height: 80px;
+  }
+
+  .page-item.active .page-link {
+    z-index: 3;
+    color: white !important;
+    background-color: var(--black-color) !important;
+    border-color: var(--black-color) !important;
+
+    box-shadow: none;
+  }
+  .page-link {
+    color: var(--black-color) !important;
+  }
+}

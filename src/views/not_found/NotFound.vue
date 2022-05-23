@@ -8,7 +8,7 @@
         <b-col lg="6" class="align-self-center mt-5">
           <h1>404</h1>
           <h2>UH OH! Você está Perdido.</h2>
-          <p>
+          <p class="mt-3">
             Esta página que você está não existe. Como você chegou aqui é um
             mistério. Mas não se preocupe em segundos será redirecionado para à
             página principal

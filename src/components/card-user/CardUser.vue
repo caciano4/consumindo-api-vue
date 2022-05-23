@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="card-user">
     <div class="mh-custom">
       <b-row
         class="container-user mt-3"
@@ -11,7 +11,7 @@
           class="card-user d-flex justify-content-between rounded"
         >
           <b-col lg="8" class="align-self-center d-flex">
-            <b-img :src="user.avatar" class="rounded mx-4 img-size" fluid-img />
+            <b-img :src="user.avatar" lg="mx-4" sm="mx-2" md="mx-2" class="rounded  img-size" fluid-img />
             <b-col>
               <h3 class="info-user">#{{ user.id }}</h3>
               <h2 class="name-user">
@@ -20,7 +20,7 @@
               <h3 class="info-user">{{ user.email }}</h3>
             </b-col>
           </b-col>
-          <b-col lg="4" class="d-flex justify-content-end align-self-center">
+          <b-col id="icons" lg="4" class="d-flex justify-content-end align-self-center">
             <edit-icon
               @click="maintenenceRoute"
               size="22"
@@ -132,79 +132,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-@import "../../styles/global.css";
-.card-user {
-  background: var(--bg-card);
-  height: 120px;
-}
-.container-user::before {
-  content: ".";
-  width: 4px;
-  height: 20px;
-  position: relative;
-  left: 25%;
-  margin-top: 20px;
-
-  background: var(--black-color);
-}
-
-.icon-color {
-  color: var(--icon-color);
-}
-.mr-icon-eye {
-  margin-right: 30px;
-}
-.info-user {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-
-  color: var(--gray-color);
-}
-
-.name-user {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2px;
-
-  color: var(--black-color);
-}
-.img-size {
-  width: 80px;
-  height: 80px;
-}
-
-.icon-edit:hover {
-  color: var(--edit-color);
-  cursor: pointer;
-}
-.icon-delete:hover {
-  color: var(--delete-color);
-  cursor: pointer;
-}
-.icon-show:hover {
-  color: var(--show-color);
-  cursor: pointer;
-}
-.mh-custom {
-  min-height: 70vh;
-}
-
-.page-item.active .page-link {
-  z-index: 3;
-  color: var(--white-color) !important;
-  background-color: var(--black-color) !important;
-  border-color: var(--black-color) !important;
-}
-.page-link {
-  color: var(--black-color) !important;
-}
+<style lang="scss">
+@import "./scss/style.scss";
 </style>

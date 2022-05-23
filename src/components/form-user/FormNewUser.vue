@@ -108,37 +108,5 @@ export default {
 </script>
 
 <style>
-@import "../../styles/global.css";
-.custom-form-input {
-  width: 584px;
-  height: 55px;
-  border-color: var(--light-color);
-  background: transparent;
-}
-.form-control:focus {
-  color: #212529;
-  background-color: var(--white-color);
-  border-color: var(--black-color) !important;
-  outline: 0;
-  box-shadow: none !important;
-}
-.btn-register-user {
-  width: 584px;
-  height: 55px;
-  background: var(--black-color);
-  border-radius: 5px;
-  color: var(--color-white);
-}
-legend {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-
-  letter-spacing: 0.2px;
-
-  color: var(--black-color);
-}
+@import './scss/style.scss';
 </style>

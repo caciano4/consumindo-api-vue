@@ -17,29 +17,3 @@ export default {
   },
 };
 </script>
-
-<style>
-@import "../../styles/global.css";
-
-@keyframes form-animation-open {
-  from {
-    height: 0;
-    opacity: 0;
-  }
-  to {
-    height: 290px;
-    opacity: 0.3;
-  }
-}
-
-@keyframes form-animation-close {
-  from {
-    height: 290px;
-    opacity: 0.3;
-  }
-  to {
-    height: 0;
-    opacity: 0;
-  }
-}
-</style>
